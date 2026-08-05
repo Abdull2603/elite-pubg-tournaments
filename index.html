@@ -215,6 +215,20 @@ margin-bottom:25px;
 transform:scale(1.1);
 transition:0.3s;
 }
+
+  input{
+width:80%;
+max-width:400px;
+padding:12px;
+border:none;
+border-radius:8px;
+margin:5px;
+}
+
+button{
+border:none;
+cursor:pointer;
+}
 </style>
 </head>
 
@@ -229,7 +243,7 @@ transition:0.3s;
 Pakistan's Competitive PUBG Mobile Tournament Platform
 </p>
 
-<a href="https://wa.me/923196096580" class="btn">
+<a href="https://wa.me/923194267605" class="btn">
 REGISTER NOW
 </a>
 
@@ -241,9 +255,30 @@ REGISTER NOW
 <a href="#tournaments">Tournaments</a>
 <a href="#posters">Posters</a>
 <a href="#videos">Videos</a>
+<a href="#register">Register</a>
 <a href="#contact">Contact</a>
 </nav>
 
+ <section id="register">
+
+<h2>📝 Tournament Registration</h2>
+
+<div class="card">
+
+<input type="text" id="player" placeholder="Player Name"><br><br>
+
+<input type="text" id="team" placeholder="Team Name"><br><br>
+
+<input type="text" id="number" placeholder="WhatsApp Number"><br><br>
+
+<button onclick="sendWhatsApp()" class="btn">
+Register Now
+</button>
+
+</div>
+
+</section>
+  
 <section id="about">
 <h2>About Us</h2>
 <div class="card">
@@ -409,6 +444,26 @@ document.getElementById("countdown").innerHTML =
 "🔴 Tournament Live Now!";
 }
 }, 1000);
+</script>
+  <script>
+function sendWhatsApp(){
+
+var player=document.getElementById("player").value;
+var team=document.getElementById("team").value;
+var number=document.getElementById("number").value;
+
+var message=
+"🏆 Elite PUBG Tournament Registration%0A%0A"+
+"Player Name: "+player+"%0A"+
+"Team Name: "+team+"%0A"+
+"WhatsApp: "+number;
+
+window.open(
+"https://wa.me/923194267605?text="+message,
+"_blank"
+);
+
+}
 </script>
 </body>
 </html>
