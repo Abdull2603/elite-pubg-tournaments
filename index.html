@@ -132,6 +132,31 @@ margin-top:15px;
 font-weight:bold;
 text-align:center;
 }
+  .prize-container{
+display:flex;
+justify-content:center;
+gap:20px;
+flex-wrap:wrap;
+margin-top:20px;
+}
+
+.prize-card{
+background:rgba(0,0,0,0.8);
+padding:20px;
+width:220px;
+border-radius:15px;
+text-align:center;
+border:2px solid gold;
+transition:0.3s;
+}
+
+.prize-card:hover{
+transform:scale(1.05);
+}
+
+.prize-card h3{
+color:gold;
+}
 </style>
 </head>
 
@@ -169,6 +194,24 @@ custom rooms, scrims, esports events and cash prize competitions.
 <p>⏰ Time: 3:00 PM</p>
 <p>💰 Entry Fee: PKR 500</p>
 <p>🏆 Prize Pool: First PKR 3000,Second PKR 1000,Third PKR 500</p>
+  <div class="prize-container">
+
+<div class="prize-card">
+<h3>🥇 1st Place</h3>
+<p>PKR 3000</p>
+</div>
+
+<div class="prize-card">
+<h3>🥈 2nd Place</h3>
+<p>PKR 1000</p>
+</div>
+
+<div class="prize-card">
+<h3>🥉 3rd Place</h3>
+<p>PKR 500</p>
+</div>
+
+</div>
   <h3 id="countdown"></h3>
   
 
@@ -176,6 +219,41 @@ custom rooms, scrims, esports events and cash prize competitions.
 Register on WhatsApp
 </a>
 </div>
+  <section id="winners">
+<h2>🏆 Hall of Champions</h2>
+
+<div class="card">
+<h3>Season Winners</h3>
+
+<table style="width:100%;text-align:center;">
+<tr>
+<th>Rank</th>
+<th>Team</th>
+<th>Prize</th>
+</tr>
+
+<tr>
+<td>🥇</td>
+<td>Coming Soon</td>
+<td>3000 PKR</td>
+</tr>
+
+<tr>
+<td>🥈</td>
+<td>Coming Soon</td>
+<td>1000 PKR</td>
+</tr>
+
+<tr>
+<td>🥉</td>
+<td>Coming Soon</td>
+<td>500 PKR</td>
+</tr>
+
+</table>
+
+</div>
+</section>
 </section>
 
 <section id="posters">
