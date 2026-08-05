@@ -48,6 +48,14 @@ color:white;
 text-decoration:none;
 margin:15px;
 font-weight:bold;
+padding:10px 15px;
+border-radius:10px;
+transition:0.3s;
+}
+
+nav a:hover{
+background:#FFD700;
+color:black;
 }
 
 section{
@@ -79,8 +87,18 @@ justify-content:center;
 }
 
 .gallery img{
-width:300px;
-border-radius:10px;
+width:320px;
+height:420px;
+object-fit:cover;
+border-radius:15px;
+border:3px solid gold;
+transition:0.4s;
+box-shadow:0 0 15px rgba(255,215,0,0.4);
+}
+
+.gallery img:hover{
+transform:scale(1.05);
+box-shadow:0 0 25px gold;
 }
 
 .video-container{
@@ -91,8 +109,15 @@ justify-content:center;
 }
 
 video{
-width:350px;
-border-radius:10px;
+width:400px;
+border-radius:15px;
+border:3px solid gold;
+box-shadow:0 0 15px rgba(255,215,0,0.4);
+transition:0.4s;
+}
+
+video:hover{
+transform:scale(1.03);
 }
 
 footer{
@@ -107,6 +132,16 @@ text-align:center;
 padding:20px;
 margin-top:40px;
 }
+  @keyframes glow{
+0%{text-shadow:0 0 10px gold;}
+50%{text-shadow:0 0 25px gold;}
+100%{text-shadow:0 0 10px gold;}
+}
+
+.hero h1{
+animation:glow 2s infinite;
+}
+  </style>
 
 .whatsapp-float{
 position:fixed;
@@ -157,14 +192,48 @@ transform:scale(1.05);
 .prize-card h3{
 color:gold;
 }
+  .hero{
+padding:100px 20px;
+text-align:center;
+background:rgba(0,0,0,0.6);
+border-radius:20px;
+}
+
+.hero h1{
+font-size:60px;
+color:#FFD700;
+text-shadow:0 0 20px #FFD700;
+}
+
+.hero p{
+font-size:22px;
+margin-top:15px;
+margin-bottom:25px;
+}
+
+.btn:hover{
+transform:scale(1.1);
+transition:0.3s;
+}
 </style>
 </head>
 
 <body>
 
 <header>
-<h1>🏆 Elite PUBG Tournaments</h1>
-<p>Professional PUBG Mobile Tournaments, Scrims & Custom Rooms</p>
+<div class="hero">
+
+<h1>🏆 ELITE PUBG TOURNAMENTS</h1>
+
+<p>
+Pakistan's Competitive PUBG Mobile Tournament Platform
+</p>
+
+<a href="https://wa.me/923196096580" class="btn">
+REGISTER NOW
+</a>
+
+</div>
 </header>
 
 <nav>
