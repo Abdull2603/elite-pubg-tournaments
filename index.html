@@ -229,11 +229,90 @@ button{
 border:none;
 cursor:pointer;
 }
+
+  .announcement{
+background:#FFD700;
+color:black;
+padding:10px;
+font-weight:bold;
+overflow:hidden;
+white-space:nowrap;
+animation:scrollText 15s linear infinite;
+}
+
+@keyframes scrollText{
+0%{transform:translateX(100%);}
+100%{transform:translateX(-100%);}
+}
+
+  .stats-container{
+display:flex;
+justify-content:center;
+flex-wrap:wrap;
+gap:20px;
+margin:40px 0;
+}
+
+.stat-box{
+background:rgba(0,0,0,0.8);
+padding:20px;
+width:220px;
+text-align:center;
+border:2px solid gold;
+border-radius:15px;
+}
+
+.stat-box h2{
+color:gold;
+font-size:35px;
+}
+
+  .slider{
+width:90%;
+max-width:1000px;
+height:450px;
+margin:40px auto;
+overflow:hidden;
+border-radius:20px;
+border:3px solid gold;
+}
+
+.slider figure{
+position:relative;
+width:500%;
+margin:0;
+left:0;
+animation:20s slider infinite;
+}
+
+.slider figure img{
+width:20%;
+height:450px;
+float:left;
+object-fit:cover;
+}
+
+@keyframes slider{
+0%{left:0;}
+20%{left:0;}
+25%{left:-100%;}
+45%{left:-100%;}
+50%{left:-200%;}
+70%{left:-200%;}
+75%{left:-300%;}
+95%{left:-300%;}
+100%{left:-400%;}
+}
+  
 </style>
 </head>
 
 <body>
 
+<div class="announcement">
+🔥 REGISTRATION OPEN | ENTRY FEE: 500 PKR | PRIZE POOL: PKR(3000)(1000)(500) | LIMITED SLOTS AVAILABLE | REGISTER NOW
+</div>
+  
 <header>
 <div class="hero">
 
@@ -247,6 +326,50 @@ Pakistan's Competitive PUBG Mobile Tournament Platform
 
 </div>
 </header>
+  <section id="slider">
+
+<h2>🔥 Featured Tournament Posters</h2>
+
+<div class="slider">
+<figure>
+
+<img src="poster1.jpg">
+<img src="poster2.jpg">
+<img src="poster3.jpg">
+<img src="poster1.jpg">
+<img src="poster2.jpg">
+
+</figure>
+</div>
+
+</section>
+  <section id="stats">
+
+<div class="stats-container">
+
+<div class="stat-box">
+<h2>500+</h2>
+<p>Players Registered</p>
+</div>
+
+<div class="stat-box">
+<h2>50+</h2>
+<p>Teams Joined</p>
+</div>
+
+<div class="stat-box">
+<h2>25+</h2>
+<p>Tournaments Hosted</p>
+</div>
+
+<div class="stat-box">
+<h2>50,000+</h2>
+<p>Prize Distributed</p>
+</div>
+
+</div>
+
+</section>
 
 <nav>
 <a href="#about">About</a>
